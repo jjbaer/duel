@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1325C8A31E5F70D10009FD62 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1325C8A21E5F70D10009FD62 /* Shaders.metal */; };
 		13D023621E5F3D25001BA6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D023611E5F3D25001BA6C6 /* Assets.xcassets */; };
 		13D023691E5F3D25001BA6C6 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13D023681E5F3D25001BA6C6 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		13D0236E1E5F3D25001BA6C6 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D0236D1E5F3D25001BA6C6 /* Messages.framework */; };
 		13D023711E5F3D25001BA6C6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023701E5F3D25001BA6C6 /* MessagesViewController.swift */; };
 		13D023741E5F3D25001BA6C6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D023721E5F3D25001BA6C6 /* MainInterface.storyboard */; };
 		13D023761E5F3D25001BA6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D023751E5F3D25001BA6C6 /* Assets.xcassets */; };
+		13D023821E5F3F9D001BA6C6 /* float4x4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023811E5F3F9D001BA6C6 /* float4x4.swift */; };
+		13D023841E5F3FD8001BA6C6 /* MetalTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023831E5F3FD8001BA6C6 /* MetalTexture.swift */; };
+		13D023861E5F3FFA001BA6C6 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023851E5F3FFA001BA6C6 /* Vertex.swift */; };
+		13D023881E5F4017001BA6C6 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023871E5F4017001BA6C6 /* Light.swift */; };
+		13D0238A1E5F40C8001BA6C6 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023891E5F40C8001BA6C6 /* Node.swift */; };
+		13D0238C1E5F40EA001BA6C6 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D0238B1E5F40EA001BA6C6 /* Cube.swift */; };
+		13D0238E1E5F4113001BA6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D0238D1E5F4113001BA6C6 /* AppDelegate.swift */; };
+		13D023921E5F41C5001BA6C6 /* MySceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023911E5F41C5001BA6C6 /* MySceneViewController.swift */; };
+		13D023941E5F4244001BA6C6 /* BufferProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D023931E5F4244001BA6C6 /* BufferProvider.swift */; };
+		13D023961E5F429B001BA6C6 /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D023951E5F429B001BA6C6 /* cube.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1325C8A21E5F70D10009FD62 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		13D0235E1E5F3D25001BA6C6 /* Duel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D023611E5F3D25001BA6C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13D023631E5F3D25001BA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +61,16 @@
 		13D023731E5F3D25001BA6C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		13D023751E5F3D25001BA6C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13D023771E5F3D25001BA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D023811E5F3F9D001BA6C6 /* float4x4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = float4x4.swift; sourceTree = "<group>"; };
+		13D023831E5F3FD8001BA6C6 /* MetalTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTexture.swift; sourceTree = "<group>"; };
+		13D023851E5F3FFA001BA6C6 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		13D023871E5F4017001BA6C6 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		13D023891E5F40C8001BA6C6 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		13D0238B1E5F40EA001BA6C6 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		13D0238D1E5F4113001BA6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13D023911E5F41C5001BA6C6 /* MySceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySceneViewController.swift; sourceTree = "<group>"; };
+		13D023931E5F4244001BA6C6 /* BufferProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferProvider.swift; sourceTree = "<group>"; };
+		13D023951E5F429B001BA6C6 /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +128,17 @@
 				13D023721E5F3D25001BA6C6 /* MainInterface.storyboard */,
 				13D023751E5F3D25001BA6C6 /* Assets.xcassets */,
 				13D023771E5F3D25001BA6C6 /* Info.plist */,
+				13D023951E5F429B001BA6C6 /* cube.png */,
+				13D023811E5F3F9D001BA6C6 /* float4x4.swift */,
+				13D023831E5F3FD8001BA6C6 /* MetalTexture.swift */,
+				13D023851E5F3FFA001BA6C6 /* Vertex.swift */,
+				13D023871E5F4017001BA6C6 /* Light.swift */,
+				13D023891E5F40C8001BA6C6 /* Node.swift */,
+				13D0238B1E5F40EA001BA6C6 /* Cube.swift */,
+				13D0238D1E5F4113001BA6C6 /* AppDelegate.swift */,
+				13D023911E5F41C5001BA6C6 /* MySceneViewController.swift */,
+				13D023931E5F4244001BA6C6 /* BufferProvider.swift */,
+				1325C8A21E5F70D10009FD62 /* Shaders.metal */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -203,6 +236,7 @@
 			files = (
 				13D023761E5F3D25001BA6C6 /* Assets.xcassets in Resources */,
 				13D023741E5F3D25001BA6C6 /* MainInterface.storyboard in Resources */,
+				13D023961E5F429B001BA6C6 /* cube.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +247,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D023941E5F4244001BA6C6 /* BufferProvider.swift in Sources */,
+				13D0238E1E5F4113001BA6C6 /* AppDelegate.swift in Sources */,
 				13D023711E5F3D25001BA6C6 /* MessagesViewController.swift in Sources */,
+				13D023921E5F41C5001BA6C6 /* MySceneViewController.swift in Sources */,
+				13D023881E5F4017001BA6C6 /* Light.swift in Sources */,
+				13D023861E5F3FFA001BA6C6 /* Vertex.swift in Sources */,
+				13D0238A1E5F40C8001BA6C6 /* Node.swift in Sources */,
+				13D023841E5F3FD8001BA6C6 /* MetalTexture.swift in Sources */,
+				1325C8A31E5F70D10009FD62 /* Shaders.metal in Sources */,
+				13D0238C1E5F40EA001BA6C6 /* Cube.swift in Sources */,
+				13D023821E5F3F9D001BA6C6 /* float4x4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +449,7 @@
 				13D0237C1E5F3D25001BA6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13D0237E1E5F3D25001BA6C6 /* Build configuration list for PBXNativeTarget "Duel" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +458,7 @@
 				13D023801E5F3D25001BA6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
