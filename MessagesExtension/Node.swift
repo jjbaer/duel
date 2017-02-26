@@ -124,4 +124,14 @@ class Node {
         }
         return device.makeSamplerState(descriptor: pSamplerDescriptor!)
     }
+    
+    func update(vertices: Array<Vertex>) {
+        vertexCount = vertices.count
+        var vertexData = Array<Float>()
+        for vertex in vertices {
+            vertexData += vertex.floatBuffer()
+        }
+        let dataSize = vertexData.count * MemoryLayout.size(ofValue: vertexData[0])
+        vertexBuffer = device.makeBuffer(bytes: vertexData, length: dataSize, options: [])
+    }
 }
