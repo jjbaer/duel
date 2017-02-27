@@ -22,6 +22,23 @@ class MessagesViewController: MSMessagesAppViewController {
     var commandQueue: MTLCommandQueue! = nil
     var projectionMatrix: float4x4!
     var textureLoader: MTKTextureLoader! = nil
+    
+    @IBAction func didPressSend(_ sender: UIButton) {
+        if let image = createImageForMessage(), let conversation = activeConversation {
+            let layout = MSMessageTemplateLayout()
+            layout.image = image
+            layout.caption = "Let's Duel"
+            
+            let message = MSMessage()
+            message.layout = layout
+            message.url = URL(string: "emptyURL")
+            
+            conversation.insert(message, completionHandler: { (error: Error?) in
+                print(error ?? "not an error")
+            })
+        }
+    }
+    
     @IBOutlet weak var mtk_view: MTKView!{
         didSet {
             mtk_view.delegate = self
